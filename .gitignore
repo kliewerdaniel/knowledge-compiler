@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.next/
+out/
+.kc-cache/
+*.log
+.env
+.env.local
+.env.*.local
+.turbo/
+coverage/
+benchmarks/results/*.json
+*.tsbuildinfo
+.DS_Store

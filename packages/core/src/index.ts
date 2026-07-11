@@ -1,0 +1,11 @@
+export { Compiler } from "./compiler.js";
+export type { CompileOptions, CompilerResult, CompilerContext, CompilerError, ErrorSeverity } from "./types.js";
+export { DefaultCompilerContext, generateErrorId } from "./types.js";
+export type { CompilerContextWithStore } from "./compiler-context.js";
+export type { IRStore } from "./ir-store.js";
+export { PipelineOrchestrator } from "./pipeline.js";
+export { Scheduler } from "./scheduler.js";
+export { loadConfig, resolveConfig, CompilerConfigSchema } from "@knowledge-compiler/config";
+export type { CompilerConfig } from "@knowledge-compiler/config";
+export { PluginRegistry } from "@knowledge-compiler/plugins";
+export type { CompilerPass, PassDescriptor, PassID, PassContext, PassResult, CompilerPhase } from "@knowledge-compiler/plugins";

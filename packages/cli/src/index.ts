@@ -1,0 +1,10 @@
+export { runCLI } from "./run-cli.js";
+export type { CompileArgs } from "./commands/compile.js";
+export { compileCommand } from "./commands/compile.js";
+export { serveCommand } from "./commands/serve.js";
+export { inspectCommand } from "./commands/inspect.js";
+export { initCommand } from "./commands/init.js";
+export { cacheStatusCommand, cacheClearCommand, cachePruneCommand } from "./commands/cache.js";
+export { pluginListCommand, pluginAddCommand, pluginRemoveCommand } from "./commands/plugin.js";
+export { versionCommand } from "./commands/version.js";
+export { logger } from "./logger.js";

@@ -1,0 +1,53 @@
+{
+  "name": "knowledge-compiler",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Compile human knowledge into optimized semantic artifacts",
+  "license": "MIT",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "test:unit": "turbo run test:unit",
+    "test:integration": "turbo run test:integration",
+    "test:performance": "turbo run test:performance",
+    "test:golden": "turbo run test:golden",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "clean": "turbo run clean",
+    "format": "prettier --write '**/*.{ts,tsx,json,md}'",
+    "ci": "turbo run lint typecheck test build",
+    "bench": "turbo run bench",
+    "docs": "typedoc",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.0.0",
+    "prettier": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.6.0",
+    "turbo": "^2.0.0",
+    "typedoc": "^0.26.0",
+    "typescript": "^5.6.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  },
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.0.0"
+}

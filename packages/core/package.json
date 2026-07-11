@@ -1,0 +1,55 @@
+{
+  "name": "@knowledge-compiler/core",
+  "version": "0.1.0",
+  "description": "Knowledge Compiler core — orchestrates the compilation pipeline",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./compiler": {
+      "import": "./dist/compiler/index.js",
+      "types": "./dist/compiler/index.d.ts"
+    },
+    "./config": {
+      "import": "./dist/config.js",
+      "types": "./dist/config.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@knowledge-compiler/artifacts": "workspace:*",
+    "@knowledge-compiler/cache": "workspace:*",
+    "@knowledge-compiler/config": "workspace:*",
+    "@knowledge-compiler/ir": "workspace:*",
+    "@knowledge-compiler/plugins": "workspace:*",
+    "fast-glob": "^3.3.3",
+    "mdast-util-to-string": "^4.0.0",
+    "pino": "^9.0.0",
+    "remark": "^15.0.0",
+    "remark-frontmatter": "^5.0.0",
+    "remark-gfm": "^4.0.0",
+    "remark-parse": "^11.0.0",
+    "unified": "^11.0.0",
+    "unist-util-visit": "^5.0.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.0.0"
+  }
+}

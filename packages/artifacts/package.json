@@ -1,0 +1,32 @@
+{
+  "name": "@knowledge-compiler/artifacts",
+  "version": "0.1.0",
+  "description": "Knowledge Compiler artifact reader/writer — serialize and deserialize compiled artifacts",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@knowledge-compiler/ir": "workspace:*",
+    "zod": "^3.24.0",
+    "zlib": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.0.0"
+  }
+}
