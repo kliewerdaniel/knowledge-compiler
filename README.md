@@ -4,6 +4,7 @@
 
 [▶ Watch the overview video on NotebookLM](https://notebooklm.google.com/notebook/1833f401-8f66-466b-9794-e2669107ab41/artifact/0a6cbfd3-dfb3-4316-b7b9-b8005397f7fc?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_)
 
+[Read The Blog Post](https://www.danielkliewer.com/blog/2026-07-11-knowledge-compiler-compiling-human-knowledge-into-static-semantic-artifacts)
 
 ![image](The_Knowledge_Compiler_-_Slide_3.png)
 
