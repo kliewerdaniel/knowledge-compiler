@@ -305,7 +305,7 @@ export function GraphView({
     return () => {
       simulationRef.current = null;
     };
-  }, [nodes, links, dimensions, selectedNode, hoveredNode]);
+  }, [nodes, links, dimensions, selectedNode, hoveredNode, onNodeClick, onNodeHover, onNodeDrag]);
 
   return (
     <div ref={containerRef} className={`w-full h-full ${className}`}>
