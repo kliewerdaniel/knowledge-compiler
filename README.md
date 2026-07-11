@@ -2,9 +2,7 @@
 
 **Compile human knowledge into optimized semantic artifacts.**
 
-<video src="./The_Knowledge_Compiler.mp4" controls style="max-width: 100%; border-radius: 8px; margin: 1rem 0;">
-  <a href="./The_Knowledge_Compiler.mp4">▶ Watch the overview video</a>
-</video>
+![Knowledge Compiler Overview](./The_Knowledge_Compiler.mp4)
 
 Knowledge Compiler transforms collections of Markdown documents into optimized,
 statically-deployable semantic artifacts. It treats documentation as source code,
