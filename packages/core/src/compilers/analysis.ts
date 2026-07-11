@@ -75,7 +75,7 @@ export class EntityExtractorPass implements CompilerPass {
       const entityData: Record<string, { entities: Array<{ type: string; value: string; count: number; positions: number[] }>; entityCount: number }> = {};
 
       for (const [filePath, doc] of (Object.entries(mdastResults) as any)) {
-        const content = doc.frontmatter?.content ?? doc.ast?.rawContent ?? doc.ast?.value ?? "";
+        const content = doc.ast?.rawContent ?? doc.frontmatter?.content ?? extractPlainText(doc.ast);
         const allText = typeof content === "string" ? content : extractPlainText(doc.ast);
         const entityMap = new Map<string, { type: string; count: number; positions: number[] }>();
 
@@ -128,7 +128,7 @@ export class KeywordExtractorPass implements CompilerPass {
 
       const docTexts: Array<{ filePath: string; text: string }> = [];
       for (const [filePath, doc] of (Object.entries(mdastResults) as any)) {
-        const content = doc.frontmatter?.content ?? doc.ast?.rawContent ?? doc.ast?.value ?? "";
+        const content = doc.ast?.rawContent ?? doc.frontmatter?.content ?? extractPlainText(doc.ast);
         const text = typeof content === "string" ? content : extractPlainText(doc.ast);
         docTexts.push({ filePath, text });
       }

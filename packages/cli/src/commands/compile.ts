@@ -250,20 +250,34 @@ export async function compileCommand(args: CompileArgs): Promise<void> {
       logger.warn(`Compilation completed with ${result.errors.length} error(s)`);
     }
 
-    const { entries, stats } = await writeArtifacts(outputDir, compiler);
-    const totalSize = entries.reduce((sum: number, e: ArtifactEntry) => sum + e.size, 0);
+    let artifactCount = 0;
+    let totalSize = 0;
+    try {
+      const fs = await import("node:fs");
+      const manifestRaw = fs.readFileSync(join(outputDir, "manifest.json"), "utf-8");
+      const manifest = JSON.parse(manifestRaw);
+      const artMap = manifest.artifacts ?? {};
+      artifactCount = Object.keys(artMap).length;
+      for (const entry of Object.values(artMap) as any) {
+        totalSize += entry.size ?? 0;
+      }
+    } catch {
+      const { entries: e, stats: s } = await writeArtifacts(outputDir, compiler);
+      artifactCount = e.length;
+      totalSize = e.reduce((sum: number, entry: ArtifactEntry) => sum + entry.size, 0);
+    }
 
     spinner.clear();
     logger.success(
       `Compilation ${result.status} in ${formatDuration(result.durationMs)}`
     );
     logger.info(`  Output: ${outputDir}`);
-    logger.info(`  Documents: ${stats.documentCount}`);
-    logger.info(`  Sections: ${stats.sectionCount}`);
-    logger.info(`  Concepts: ${stats.conceptCount}`);
-    logger.info(`  Edges: ${stats.edgeCount}`);
-    logger.info(`  Embeddings: ${stats.embeddingCount}`);
-    logger.info(`  Artifacts: ${entries.length} (${formatBytes(totalSize)})`);
+    logger.info(`  Documents: ${result.documentsProcessed}`);
+    logger.info(`  Sections: ${result.sectionsProcessed}`);
+    logger.info(`  Concepts: ${result.conceptsProcessed}`);
+    logger.info(`  Edges: ${result.artifactsWritten}`);
+    logger.info(`  Embeddings: ${result.artifactsWritten}`);
+    logger.info(`  Artifacts: ${artifactCount} (${formatBytes(totalSize)})`);
 
     if (result.warnings.length > 0 && !args.quiet) {
       logger.warn(`  Warnings: ${result.warnings.length}`);

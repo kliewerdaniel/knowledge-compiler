@@ -39,7 +39,7 @@ export class TextChunkerPass implements CompilerPass {
       const chunkConfig = ctx.config.embedding;
       const chunks: Record<string, any[]> = {};
       for (const [filePath, doc] of (Object.entries(mdastResults) as any)) {
-        const content = doc.frontmatter?.content ?? doc.ast?.value ?? "";
+        const content = doc.ast?.rawContent ?? doc.frontmatter?.content ?? extractPlainText(doc.ast);
         const text = typeof content === "string" ? content : extractPlainText(doc.ast);
         const docChunks = splitTextIntoChunks(text, chunkConfig.chunkSize, chunkConfig.chunkOverlap);
         chunks[filePath] = docChunks.map((chunk, i) => ({ sectionId: `${filePath}-chunk-${i}`, content: chunk.content, startChar: chunk.start, endChar: chunk.end, tokenCount: estimateTokens(chunk.content), order: i }));

@@ -64,7 +64,7 @@ export class DeduplicationPass implements CompilerPass {
       const mdastResults = ps(ctx, "mdastResults") ?? {};
       const textChunks = ps(ctx, "textChunks") ?? {};
       const allItems: Array<{ id: string; content: string; simHash: number[] }> = [];
-      for (const [filePath, doc] of (Object.entries(mdastResults) as any)) { const content = doc.frontmatter?.content ?? doc.ast?.value ?? ""; const text = typeof content === "string" ? content : extractPlainText(doc.ast); allItems.push({ id: filePath, content: text, simHash: computeSimHash(text) }); }
+      for (const [filePath, doc] of (Object.entries(mdastResults) as any)) { const content = doc.ast?.rawContent ?? doc.frontmatter?.content ?? extractPlainText(doc.ast); const text = typeof content === "string" ? content : extractPlainText(doc.ast); allItems.push({ id: filePath, content: text, simHash: computeSimHash(text) }); }
       for (const [, chunks] of (Object.entries(textChunks) as any)) for (const chunk of chunks) allItems.push({ id: chunk.sectionId, content: chunk.content, simHash: computeSimHash(chunk.content) });
       const duplicates = new Set<string>();
       const hashMap = new Map<number, string[]>();
