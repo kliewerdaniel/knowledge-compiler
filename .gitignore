@@ -13,4 +13,3 @@ benchmarks/results/*.json
 *.tsbuildinfo
 .DS_Store
 blog/
-The_Knowledge_Compiler.mp4
