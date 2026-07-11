@@ -17,7 +17,7 @@ import { z } from "zod";
 
 export const ParallelConfigSchema = z.object({
   enabled: z.boolean().default(true),
-  maxWorkers: z.number().int().positive().default(0),
+  maxWorkers: z.number().int().min(0).default(0),
   workerMemory: z.number().positive().default(512),
   batchSize: z.number().int().positive().default(100),
 });
@@ -170,17 +170,17 @@ export const VisualizationConfigSchema = z.object({
 // ── Top-level Compiler Config ────────────────────────────────
 export const CompilerConfigSchema = z.object({
   version: z.number().int().positive().default(1),
-  source: SourceConfigSchema,
-  output: OutputConfigSchema,
-  pipeline: PipelineConfigSchema,
-  graph: GraphConfigSchema,
-  embedding: EmbeddingConfigSchema,
-  clustering: ClusteringConfigSchema,
-  analysis: AnalysisConfigSchema,
-  frontmatter: FrontmatterConfigSchema,
-  cache: CacheConfigSchema,
-  plugins: PluginsConfigSchema,
-  visualization: VisualizationConfigSchema,
+  source: SourceConfigSchema.default({}),
+  output: OutputConfigSchema.default({}),
+  pipeline: PipelineConfigSchema.default({}),
+  graph: GraphConfigSchema.default({}),
+  embedding: EmbeddingConfigSchema.default({}),
+  clustering: ClusteringConfigSchema.default({}),
+  analysis: AnalysisConfigSchema.default({}),
+  frontmatter: FrontmatterConfigSchema.default({}),
+  cache: CacheConfigSchema.default({}),
+  plugins: PluginsConfigSchema.default({}),
+  visualization: VisualizationConfigSchema.default({}),
 });
 
 export type CompilerConfig = z.infer<typeof CompilerConfigSchema>;

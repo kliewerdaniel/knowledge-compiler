@@ -120,6 +120,7 @@ export class CentroidCalculatorPass implements CompilerPass {
         averageClusterSize: clusterData.clusterAssignments.length / Math.max(clusterData.clusterCount, 1), hierarchyRoots: [],
       };
       pss(ctx, "clusterGraph", clusterGraph);
+      ctx.getIRStore().setClusterGraph("root", clusterGraph);
       return { status: "success", data: { centroidCount: centroids.size }, errors: [], warnings: [], timing: { durationMs: Date.now() - startTime } };
     } catch (err) {
       const error = err instanceof Error ? err : new Error(String(err));

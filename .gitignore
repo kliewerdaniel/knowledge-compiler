@@ -12,3 +12,4 @@ coverage/
 benchmarks/results/*.json
 *.tsbuildinfo
 .DS_Store
+blog/

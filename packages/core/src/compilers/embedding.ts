@@ -43,6 +43,8 @@ export class TextChunkerPass implements CompilerPass {
         const text = typeof content === "string" ? content : extractPlainText(doc.ast);
         const docChunks = splitTextIntoChunks(text, chunkConfig.chunkSize, chunkConfig.chunkOverlap);
         chunks[filePath] = docChunks.map((chunk, i) => ({ sectionId: `${filePath}-chunk-${i}`, content: chunk.content, startChar: chunk.start, endChar: chunk.end, tokenCount: estimateTokens(chunk.content), order: i }));
+        const sectionGraph = { docId: filePath, sections: chunks[filePath], totalSections: chunks[filePath].length, maxDepth: 1, metadata: {}, createdAt: Date.now() };
+        ctx.getIRStore().setSectionGraph(filePath, sectionGraph);
       }
       pss(ctx, "textChunks", chunks);
       const totalChunks = Object.values(chunks).reduce((s: number, arr: any[]) => s + arr.length, 0);

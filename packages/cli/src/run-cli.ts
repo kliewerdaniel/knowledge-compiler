@@ -24,7 +24,7 @@ cli
   .option("-o, --out <dir>", "Output directory")
   .option("--passes <list>", "Comma-separated passes to run")
   .option("--skip-passes <list>", "Comma-separated passes to skip")
-  .option("-v, --verbose", "Verbose output")
+  .option("--verbose", "Verbose output")
   .option("-q, --quiet", "Quiet output")
   .option("--watch", "Watch mode (recompile on file changes)")
   .action(async (input: string | undefined, options: Record<string, unknown>) => {
@@ -64,39 +64,29 @@ cli
   });
 
 cli
-  .command("cache status", "Show cache statistics")
-  .action(async () => {
-    await cacheStatusCommand();
+  .command("cache <subcommand>", "Cache management")
+  .action(async (subcommand: string) => {
+    switch (subcommand) {
+      case "status": await cacheStatusCommand(); break;
+      case "clear": await cacheClearCommand(); break;
+      case "prune": await cachePruneCommand(); break;
+      default:
+        logger.error(`Unknown cache command: ${subcommand}`);
+        process.exitCode = 1;
+    }
   });
 
 cli
-  .command("cache clear", "Clear the entire cache")
-  .action(async () => {
-    await cacheClearCommand();
-  });
-
-cli
-  .command("cache prune", "Remove expired cache entries")
-  .action(async () => {
-    await cachePruneCommand();
-  });
-
-cli
-  .command("plugin list", "List installed plugins")
-  .action(async () => {
-    await pluginListCommand();
-  });
-
-cli
-  .command("plugin add <name>", "Install a plugin")
-  .action(async (name: string) => {
-    await pluginAddCommand(name);
-  });
-
-cli
-  .command("plugin remove <name>", "Remove a plugin")
-  .action(async (name: string) => {
-    await pluginRemoveCommand(name);
+  .command("plugin <action> [name]", "Plugin management")
+  .action(async (action: string, name: string | undefined) => {
+    switch (action) {
+      case "list": await pluginListCommand(); break;
+      case "add": if (name) await pluginAddCommand(name); break;
+      case "remove": if (name) await pluginRemoveCommand(name); break;
+      default:
+        logger.error(`Unknown plugin command: ${action}`);
+        process.exitCode = 1;
+    }
   });
 
 cli

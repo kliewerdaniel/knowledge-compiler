@@ -86,51 +86,6 @@ const BUILTIN_PASSES: CompilerPass[] = [
 export class Compiler {
   private config: CompilerConfig;
   private passRegistry = new PluginRegistry();
-  private irStore: IRStore = {
-    setDocument: () => {},
-    getDocument: () => undefined,
-    getAllDocuments: () => [],
-    getDocumentCount: () => 0,
-    
-    setDocumentMeta: () => {},
-    getDocumentMeta: () => undefined,
-    getAllDocumentMeta: () => new Map(),
-    
-    setSectionGraph: () => {},
-    getSectionGraph: () => undefined,
-    getAllSectionGraphs: () => [],
-    getSectionCount: () => 0,
-    
-    setKnowledgeGraph: () => {},
-    getKnowledgeGraph: () => null,
-    
-    setConceptGraph: () => {},
-    getConceptGraph: () => undefined,
-    getAllConceptGraphs: () => [],
-    
-    setClusterGraph: () => {},
-    getClusterGraph: () => undefined,
-    getAllClusterGraphs: () => [],
-    
-    setNavigationGraph: () => {},
-    getNavigationGraph: () => undefined,
-    getAllNavigationGraphs: () => [],
-    
-    addEdge: () => {},
-    getEdge: () => undefined,
-    getAllEdges: () => [],
-    getEdgesByType: () => [],
-    getEdgesBySource: () => [],
-    getEdgesByTarget: () => [],
-    
-    setEmbedding: () => {},
-    getEmbedding: () => undefined,
-    getEmbeddingCount: () => 0,
-    
-    getStats: () => ({ documentCount: 0, sectionCount: 0, conceptCount: 0, edgeCount: 0, embeddingCount: 0 }),
-    
-    transaction: <T>(fn: (s: unknown) => T): T => fn({})
-  };
   private compilerContext: CompilerContext;
   private pipeline: PipelineOrchestrator | null = null;
   private scheduler = new Scheduler(4);
@@ -184,9 +139,9 @@ export class Compiler {
         status: fatalErrors.length > 0 ? "failed" : degradedErrors.length > 0 ? "partial" : "success",
         errors: this.compilerContext.errors,
         warnings: this.compilerContext.warnings,
-        artifactsWritten: this.irStore.getEmbeddingCount(),
-        documentsProcessed: this.irStore.getDocumentCount(),
-        sectionsProcessed: this.irStore.getSectionCount(),
+        artifactsWritten: this.compilerContext.getIRStore().getEmbeddingCount(),
+        documentsProcessed: this.compilerContext.getIRStore().getDocumentCount(),
+        sectionsProcessed: this.compilerContext.getIRStore().getSectionCount(),
         conceptsProcessed: 0,
         durationMs,
         phaseTiming: Object.fromEntries(this.compilerContext.phaseStartTime) as any,
@@ -222,7 +177,7 @@ export class Compiler {
   }
 
   getIRStore(): IRStore {
-    return this.irStore;
+    return this.compilerContext.getIRStore();
   }
 
   getConfig(): CompilerConfig {

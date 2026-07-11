@@ -212,11 +212,14 @@ export class MDASTParserPass implements CompilerPass {
           const tree = processor.parse(file.content);
           const serialized = processor.runSync(tree);
           parseResult[file.filePath] = {
-            filePath: file.filePath, ast: serialized, frontmatter: fm,
+            filePath: file.filePath, ast: { ...serialized, rawContent: file.content }, frontmatter: fm,
             totalTokens: estimateTokens(file.content),
           };
+          ctx.getIRStore().setDocument(file.filePath, { ...serialized, rawContent: file.content });
+          ctx.getIRStore().setDocumentMeta(file.filePath, { frontmatter: fm, filePath: file.filePath, checksum: file.checksum, mtime: file.mtime, size: file.size });
         } catch {
-          parseResult[file.filePath] = { filePath: file.filePath, ast: { type: "root", children: [] }, frontmatter: {}, totalTokens: 0 };
+          parseResult[file.filePath] = { filePath: file.filePath, ast: { type: "root", children: [], rawContent: file.content }, frontmatter: {}, totalTokens: 0 };
+          ctx.getIRStore().setDocument(file.filePath, { type: "root", children: [], rawContent: file.content });
         }
       }
 

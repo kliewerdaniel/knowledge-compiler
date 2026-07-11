@@ -75,7 +75,7 @@ export class EntityExtractorPass implements CompilerPass {
       const entityData: Record<string, { entities: Array<{ type: string; value: string; count: number; positions: number[] }>; entityCount: number }> = {};
 
       for (const [filePath, doc] of (Object.entries(mdastResults) as any)) {
-        const content = doc.frontmatter?.content ?? doc.ast?.value ?? "";
+        const content = doc.frontmatter?.content ?? doc.ast?.rawContent ?? doc.ast?.value ?? "";
         const allText = typeof content === "string" ? content : extractPlainText(doc.ast);
         const entityMap = new Map<string, { type: string; count: number; positions: number[] }>();
 
@@ -128,7 +128,7 @@ export class KeywordExtractorPass implements CompilerPass {
 
       const docTexts: Array<{ filePath: string; text: string }> = [];
       for (const [filePath, doc] of (Object.entries(mdastResults) as any)) {
-        const content = doc.frontmatter?.content ?? doc.ast?.value ?? "";
+        const content = doc.frontmatter?.content ?? doc.ast?.rawContent ?? doc.ast?.value ?? "";
         const text = typeof content === "string" ? content : extractPlainText(doc.ast);
         docTexts.push({ filePath, text });
       }
@@ -223,6 +223,9 @@ export class ConceptHierarchyPass implements CompilerPass {
 
       const graph = { nodes: conceptsArray, edges: [], adjacency: new Map<string, string[]>(), maxLevel: Math.max(...conceptsArray.map((c: any) => c.level), 0), totalConcepts: conceptsArray.length, rootConceptIds: rootConcepts, leafCount: leafConcepts.length, averageDepth: conceptsArray.reduce((s: number, c: any) => s + c.level, 0) / Math.max(conceptsArray.length, 1), maxChildren: 0 };
       pss(ctx, "conceptHierarchy", graph);
+      for (const [filePath] of (Object.entries(entityData) as any)) {
+        ctx.getIRStore().setConceptGraph(filePath, graph);
+      }
       return { status: "success", data: { conceptCount: conceptsArray.length, typeGroups: typeGroups.size }, errors: [], warnings: [], timing: { durationMs: Date.now() - startTime } };
     } catch (err) {
       const error = err instanceof Error ? err : new Error(String(err));

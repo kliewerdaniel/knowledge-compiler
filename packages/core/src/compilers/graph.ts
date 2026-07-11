@@ -60,6 +60,10 @@ export class KnowledgeGraphBuilderPass implements CompilerPass {
 
       const knowledgeGraph = { nodes, edges: new Map(edges.map((e) => [e.id, e])), adjacency, version: "1.0.0", upstreamGraphs: [], nodeTypeDistribution: typeDist, totalEdges: edges.length, averageImportance: avgImportance, createdAt: Date.now() };
       pss(ctx, "knowledgeGraph", knowledgeGraph);
+      ctx.getIRStore().setKnowledgeGraph(knowledgeGraph);
+      for (const edge of edges) {
+        ctx.getIRStore().addEdge(edge);
+      }
       return { status: "success", data: { nodeCount: nodes.size, edgeCount: edges.length }, errors: [], warnings: [], timing: { durationMs: Date.now() - startTime } };
     } catch (err) {
       const error = err instanceof Error ? err : new Error(String(err));
