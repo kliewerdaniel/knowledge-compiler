@@ -2,7 +2,7 @@
 
 **Compile human knowledge into optimized semantic artifacts.**
 
-![Knowledge Compiler Overview](./The_Knowledge_Compiler.mp4)
+[![Knowledge Compiler Overview](https://img.shields.io/badge/▶_Watch_Overview_Video-000?style=for-the-badge&logo=github)](./The_Knowledge_Compiler.mp4)
 
 Knowledge Compiler transforms collections of Markdown documents into optimized,
 statically-deployable semantic artifacts. It treats documentation as source code,
