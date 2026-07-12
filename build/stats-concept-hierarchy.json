@@ -2,12 +2,17 @@
   "passId": "concept-hierarchy",
   "phase": "ANALYSIS",
   "stats": {
-    "conceptHierarchy.totalConcepts": 132,
-    "conceptHierarchy.maxLevel": 4,
-    "conceptHierarchy.rootCount": 3,
-    "conceptHierarchy.leafCount": 111,
-    "conceptHierarchy.averageDepth": 2.696969696969697,
-    "conceptHierarchy.edgeCount": 129
+    "frontmatterResults.__totalKeys": 149,
+    "mdastResults.__totalKeys": 149,
+    "linkData.__totalKeys": 149,
+    "entityData.__totalKeys": 149,
+    "keywordData.__totalKeys": 149,
+    "conceptHierarchy.totalConcepts": 25568,
+    "conceptHierarchy.maxLevel": 6,
+    "conceptHierarchy.rootCount": 149,
+    "conceptHierarchy.leafCount": 24378,
+    "conceptHierarchy.averageDepth": 3.421933667083855,
+    "conceptHierarchy.edgeCount": 25279
   },
   "validation": {
     "pass": "concept-hierarchy",
@@ -19,7 +24,7 @@
         "message": "OK"
       },
       {
-        "name": "concept count: 132",
+        "name": "concept count: 25568",
         "passed": true,
         "message": "OK"
       },

@@ -1,7 +1,11 @@
 {
   "passId": "pre-entity-extractor",
   "phase": "ANALYSIS",
-  "stats": {},
+  "stats": {
+    "frontmatterResults.__totalKeys": 149,
+    "mdastResults.__totalKeys": 149,
+    "linkData.__totalKeys": 149
+  },
   "validation": {
     "pass": "pre-entity-extractor",
     "valid": true,

@@ -1,7 +1,11 @@
 {
   "passId": "link-extractor",
   "phase": "ANALYSIS",
-  "stats": {},
+  "stats": {
+    "frontmatterResults.__totalKeys": 149,
+    "mdastResults.__totalKeys": 149,
+    "linkData.__totalKeys": 149
+  },
   "validation": {
     "pass": "link-extractor",
     "valid": true,

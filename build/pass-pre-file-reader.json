@@ -4,7 +4,7 @@
   "input": {
     "resolvedFiles": [
       {
-        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/machine-learning.md",
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-10-04-detailed-description-of-insight-journal.md",
         "checksum": "",
         "mtime": 0,
         "size": 0,
@@ -12,7 +12,7 @@
         "contentPreview": ""
       },
       {
-        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/neural-networks.md",
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-10-09-how-to-build-a-persona-based-blog-post-generator-with-large-language-models.md",
         "checksum": "",
         "mtime": 0,
         "size": 0,
@@ -20,7 +20,1175 @@
         "contentPreview": ""
       },
       {
-        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/transformers.md",
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-10-12-django-react.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-10-18-building-a-full-stack-application-with-django-and-react.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-10-22-integrating-django-react-ollama-with-xai-api.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-10-24-ghost-writer.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-10-30-creating-ai-agents.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-04-deep-fake.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-22-planning.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-22-rlhf-lab.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-23-rlhf-lab-business-plan.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-27-ai-agent-based-cross-platform-content-generator-and-distributor.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-27-data-annotation-guide.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-27-enhanced-persona-generator.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-27-instagram-feed-summarizer.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-27-reddit-blog-generator.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-27-swarm-autogen.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-28-basic-autogen.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-28-basic-swarm-chatbot.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-29-tech-company-orchestrator.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-01-basic-rag.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-02-persona-chat.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-05-personagen.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-09-pydantic-rag.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-10-rl.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-11-next-gen-personagen.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-14-learning-from-the-past.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-19-continue.dev-ollama.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-19-homeless-guide-austin.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-19-langchain-ollama.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-30-cultural-fingerprints.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-01-16-solo-business-ventures.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-01-22-image-to-book.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-01-23-building-a-multimodal-story-generation-system.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-02-03-scrape-reddit-analysis-blog.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-02-05-loco-local-localllama.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-02-05-ollama-smolagents-open-deep-research.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-02-05-open-deep-research.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-02-14-reddiss.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-02-23-privacy-policy.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-02-25-building-an-ai-powered-filename-generator-chrome-extension.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-03-text-adventure.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-09-custom-agent.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-09-mastra-ollama-nextjs.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-09-nextjs-firebase.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-09-nextjs-ollama-custom-agent-framework.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-09-reason-ai.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-11-integrating-rust-burn-framework-for-ai.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-11-integrating-the-openai-agents-sdk-with-rusts-burn-framework.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-12-integrating-openai-agents-sdk-ollama.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-12-mcp-openai-agents-sdk-ollama.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-12-mcp-openai-responses-api-agents-sdk-ollama.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-12-openai-agents-sdk-ollama-integration.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-13-simulacra.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-21-browser-use-ollama-mcp.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-22-local-llm-document-pipeline-blueprint.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-24-model-context-protocol.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-25-large-scale-agent-architecture.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-28-ollama-chunking.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-28-scalable-ai-backends.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-29-markdown-teaching-assistant.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-30-building-a-personalized-ai-learning-system-with-local-llm.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-30-learning-platform.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-04-06-judgmental-art-cat.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-04-07-echoshelf.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-07-06-beyond-prompts.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-07-06-demystifying-large-language-models.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-07-08-ai-ssr-guide.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-10-18-Is-There-No-King.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-10-18-NextJS-SEO-CLIne-Prompt.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-10-19-building-a-local-llm-powered-knowledge-graph.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-10-19-vibe-coding-janitor-session.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-10-20-how-to-vibe-code-a-nextjs-boilerplate-repo.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-10-21-learn-programming-computer-science-youtube-roadmap.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-10-21-ultimate-guide-export-your-reddit-data-to-markdown-using-python-and-PRAW-API.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-10-25-building-your-own-uncensored-ai-overlord.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-10-31-reddit-haunting-project-ai-resurrection.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-02-rise-of-vibe-coding.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-03-document-driven-development-nextjs-blog.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-03-the-revolution-will-be-documented.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-04-ai-flatten-workforce-inequality-honest-conversation.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-05-capacity-review-ai-workflow-vibe-coding.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-05-how-to-build-an-ai-study-system-that-actually-works-citizens-replace-your-broken-pdf-tools.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-05-the-ghost-in-the-machine-is-finally-allowed-to-see-a-beginners-guide-to-mcp.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-08-local-llm-integration.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-10-top-ai-algortihms.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-11-vscode-blog-editing.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-12-mastering-llama-cpp-local-llm-integration-guide.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-14-2025-inference-new-geography-intelligence.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-15-building-evaluating-local-research-assistant-graphrag-vero-eval.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-12-04-critical-nextjs-rce-cve-2025-66478-security-guide.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-12-09-mcp-integration-uncensored-chatbot.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-03-american-phoenix.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-03-autonomous-architectures.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-05-architectures-of-autonomous-voice.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-05-quantizing-consciousness-digital-resurrection.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-07-specgen-deterministic-ai-powered-code-generation-from-naturals-language.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-08-revolutionizing-music-creation-the-dawn-of-ace-step-and-the-shadows-of-ai-warfare.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-10-the-ai-revolution-in-business-transforming-sales-crm-and-customer-management-in-2026.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-11-from-grief-to-code-the-digital-resurrection-journey.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-12-autonomous-ai-agents-developer-portfolio.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-16-from-fragmented-experiments-to-cognitive-synthesis.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-22-dynamic-persona-moe-rag.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-22-from-scaffolding-to-reality-building-the-dynamic-persona-moe-rag-system.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-22-renders-latest-betrayal-or-how-my-logs-quietly-became-someone-elses-asset.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-25-building-the-synthetic-analyst.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-25-dynamic-persona-moe-rag-building-a-sovereign-synthetic-intelligence-system.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-25-synthetic-intelligence.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-28-dynamic-persona-moe-rag-implementation-plan.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-02-03-dynamic-persona-moe-rag-building-memory-driven-synthetic-intelligence.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-02-08-audible-data-transmission-when-humans-become-the-codec.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-02-13-the-biological-api-why-ai-developers-should-care-about-rhythmic-chanting.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-02-15-building-this-blog.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-02-19-building-knowledge-chatbot.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-02-22-building-cognitive-graph-ai-application.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-03-10-breaking-free-from-chatgpt.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-03-10-how-to-run-your-own-ai-agent-openclaw-qwen-telegram.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-03-17-building-a-private-knowledge-graph-with-local-ai-agents.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-03-26-deerflow-2-building-sovereign-ai-agent-systems.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-03-28-architecture-as-autonomy.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-03-28-sovereignty-manifesto.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-03-29-architecture-of-autonomy.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-03-29-sovereign-synthesis.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-04-15-synthetic-intelligence-why-emergence-is-math-and-data-should-stay-local.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-04-29-recursive-language-models.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-05-01-qwen-scope-interpretability-interface.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-05-02-autodata-ram-ecosystem.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-06-01-objective03-local-news-agency.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-06-03-the-model-is-not-the-product-on-building-persistent-intelligence-infrastructure.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-06-08-objective05-exec-giving-local-intelligence-system-hands.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-06-08-opendesign-opencode-local-first-design-operating-system.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-06-12-sovereignspec-ganymedean-alignment-protocol.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-06-12-sovereignspec-local-first-spec-driven-development.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-06-14-sovereign-memory-bank-a-deep-dive-into-autonomous-cognitive-memory-for-agent-systems.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-06-14-sovereign-memory-bank.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-06-30-amis-in-action-autonomous-marketing-knowledge-graph.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-02-building-autonomous-sovereign-ai-with-autoresearch-loops-and-fine-tuned-expert-models.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-02-context-engineering-the-real-full-stack-development-paradigm.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-03-the-model-is-not-the-product.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-03-the-sovereign-intelligence-observatory.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-04-sovereign-intelligence-stack.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-05-getting-started-sovereign-ai.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-05-local-ai-architecture-synthesis.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-05-retrieval-architecture-synthesis.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-05-sovereign-ai-architecture-synthesis.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-06-sovereign-ai-benchmarks-performance-results.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-06-the-sovereign-loop-why-model-local-ai-is-the-missing-os-layer.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-09-telemetry-intelligence-engine.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/temp.md",
         "checksum": "",
         "mtime": 0,
         "size": 0,
@@ -32,7 +1200,7 @@
   "output": {
     "resolvedFiles": [
       {
-        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/machine-learning.md",
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-10-04-detailed-description-of-insight-journal.md",
         "checksum": "",
         "mtime": 0,
         "size": 0,
@@ -40,7 +1208,7 @@
         "contentPreview": ""
       },
       {
-        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/neural-networks.md",
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-10-09-how-to-build-a-persona-based-blog-post-generator-with-large-language-models.md",
         "checksum": "",
         "mtime": 0,
         "size": 0,
@@ -48,7 +1216,1175 @@
         "contentPreview": ""
       },
       {
-        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/transformers.md",
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-10-12-django-react.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-10-18-building-a-full-stack-application-with-django-and-react.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-10-22-integrating-django-react-ollama-with-xai-api.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-10-24-ghost-writer.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-10-30-creating-ai-agents.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-04-deep-fake.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-22-planning.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-22-rlhf-lab.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-23-rlhf-lab-business-plan.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-27-ai-agent-based-cross-platform-content-generator-and-distributor.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-27-data-annotation-guide.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-27-enhanced-persona-generator.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-27-instagram-feed-summarizer.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-27-reddit-blog-generator.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-27-swarm-autogen.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-28-basic-autogen.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-28-basic-swarm-chatbot.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-29-tech-company-orchestrator.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-01-basic-rag.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-02-persona-chat.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-05-personagen.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-09-pydantic-rag.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-10-rl.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-11-next-gen-personagen.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-14-learning-from-the-past.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-19-continue.dev-ollama.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-19-homeless-guide-austin.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-19-langchain-ollama.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-30-cultural-fingerprints.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-01-16-solo-business-ventures.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-01-22-image-to-book.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-01-23-building-a-multimodal-story-generation-system.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-02-03-scrape-reddit-analysis-blog.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-02-05-loco-local-localllama.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-02-05-ollama-smolagents-open-deep-research.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-02-05-open-deep-research.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-02-14-reddiss.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-02-23-privacy-policy.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-02-25-building-an-ai-powered-filename-generator-chrome-extension.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-03-text-adventure.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-09-custom-agent.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-09-mastra-ollama-nextjs.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-09-nextjs-firebase.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-09-nextjs-ollama-custom-agent-framework.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-09-reason-ai.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-11-integrating-rust-burn-framework-for-ai.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-11-integrating-the-openai-agents-sdk-with-rusts-burn-framework.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-12-integrating-openai-agents-sdk-ollama.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-12-mcp-openai-agents-sdk-ollama.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-12-mcp-openai-responses-api-agents-sdk-ollama.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-12-openai-agents-sdk-ollama-integration.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-13-simulacra.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-21-browser-use-ollama-mcp.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-22-local-llm-document-pipeline-blueprint.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-24-model-context-protocol.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-25-large-scale-agent-architecture.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-28-ollama-chunking.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-28-scalable-ai-backends.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-29-markdown-teaching-assistant.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-30-building-a-personalized-ai-learning-system-with-local-llm.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-03-30-learning-platform.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-04-06-judgmental-art-cat.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-04-07-echoshelf.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-07-06-beyond-prompts.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-07-06-demystifying-large-language-models.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-07-08-ai-ssr-guide.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-10-18-Is-There-No-King.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-10-18-NextJS-SEO-CLIne-Prompt.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-10-19-building-a-local-llm-powered-knowledge-graph.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-10-19-vibe-coding-janitor-session.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-10-20-how-to-vibe-code-a-nextjs-boilerplate-repo.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-10-21-learn-programming-computer-science-youtube-roadmap.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-10-21-ultimate-guide-export-your-reddit-data-to-markdown-using-python-and-PRAW-API.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-10-25-building-your-own-uncensored-ai-overlord.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-10-31-reddit-haunting-project-ai-resurrection.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-02-rise-of-vibe-coding.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-03-document-driven-development-nextjs-blog.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-03-the-revolution-will-be-documented.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-04-ai-flatten-workforce-inequality-honest-conversation.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-05-capacity-review-ai-workflow-vibe-coding.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-05-how-to-build-an-ai-study-system-that-actually-works-citizens-replace-your-broken-pdf-tools.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-05-the-ghost-in-the-machine-is-finally-allowed-to-see-a-beginners-guide-to-mcp.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-08-local-llm-integration.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-10-top-ai-algortihms.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-11-vscode-blog-editing.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-12-mastering-llama-cpp-local-llm-integration-guide.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-14-2025-inference-new-geography-intelligence.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-11-15-building-evaluating-local-research-assistant-graphrag-vero-eval.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-12-04-critical-nextjs-rce-cve-2025-66478-security-guide.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2025-12-09-mcp-integration-uncensored-chatbot.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-03-american-phoenix.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-03-autonomous-architectures.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-05-architectures-of-autonomous-voice.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-05-quantizing-consciousness-digital-resurrection.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-07-specgen-deterministic-ai-powered-code-generation-from-naturals-language.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-08-revolutionizing-music-creation-the-dawn-of-ace-step-and-the-shadows-of-ai-warfare.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-10-the-ai-revolution-in-business-transforming-sales-crm-and-customer-management-in-2026.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-11-from-grief-to-code-the-digital-resurrection-journey.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-12-autonomous-ai-agents-developer-portfolio.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-16-from-fragmented-experiments-to-cognitive-synthesis.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-22-dynamic-persona-moe-rag.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-22-from-scaffolding-to-reality-building-the-dynamic-persona-moe-rag-system.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-22-renders-latest-betrayal-or-how-my-logs-quietly-became-someone-elses-asset.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-25-building-the-synthetic-analyst.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-25-dynamic-persona-moe-rag-building-a-sovereign-synthetic-intelligence-system.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-25-synthetic-intelligence.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-01-28-dynamic-persona-moe-rag-implementation-plan.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-02-03-dynamic-persona-moe-rag-building-memory-driven-synthetic-intelligence.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-02-08-audible-data-transmission-when-humans-become-the-codec.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-02-13-the-biological-api-why-ai-developers-should-care-about-rhythmic-chanting.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-02-15-building-this-blog.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-02-19-building-knowledge-chatbot.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-02-22-building-cognitive-graph-ai-application.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-03-10-breaking-free-from-chatgpt.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-03-10-how-to-run-your-own-ai-agent-openclaw-qwen-telegram.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-03-17-building-a-private-knowledge-graph-with-local-ai-agents.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-03-26-deerflow-2-building-sovereign-ai-agent-systems.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-03-28-architecture-as-autonomy.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-03-28-sovereignty-manifesto.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-03-29-architecture-of-autonomy.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-03-29-sovereign-synthesis.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-04-15-synthetic-intelligence-why-emergence-is-math-and-data-should-stay-local.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-04-29-recursive-language-models.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-05-01-qwen-scope-interpretability-interface.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-05-02-autodata-ram-ecosystem.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-06-01-objective03-local-news-agency.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-06-03-the-model-is-not-the-product-on-building-persistent-intelligence-infrastructure.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-06-08-objective05-exec-giving-local-intelligence-system-hands.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-06-08-opendesign-opencode-local-first-design-operating-system.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-06-12-sovereignspec-ganymedean-alignment-protocol.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-06-12-sovereignspec-local-first-spec-driven-development.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-06-14-sovereign-memory-bank-a-deep-dive-into-autonomous-cognitive-memory-for-agent-systems.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-06-14-sovereign-memory-bank.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-06-30-amis-in-action-autonomous-marketing-knowledge-graph.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-02-building-autonomous-sovereign-ai-with-autoresearch-loops-and-fine-tuned-expert-models.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-02-context-engineering-the-real-full-stack-development-paradigm.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-03-the-model-is-not-the-product.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-03-the-sovereign-intelligence-observatory.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-04-sovereign-intelligence-stack.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-05-getting-started-sovereign-ai.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-05-local-ai-architecture-synthesis.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-05-retrieval-architecture-synthesis.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-05-sovereign-ai-architecture-synthesis.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-06-sovereign-ai-benchmarks-performance-results.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-06-the-sovereign-loop-why-model-local-ai-is-the-missing-os-layer.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2026-07-09-telemetry-intelligence-engine.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/temp.md",
         "checksum": "",
         "mtime": 0,
         "size": 0,
@@ -64,5 +2400,5 @@
     "valid": true,
     "checks": []
   },
-  "timestamp": 1783823356644
+  "timestamp": 1783823786914
 }

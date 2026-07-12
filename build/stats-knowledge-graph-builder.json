@@ -2,16 +2,21 @@
   "passId": "knowledge-graph-builder",
   "phase": "GRAPH_CONSTRUCTION",
   "stats": {
-    "conceptHierarchy.totalConcepts": 132,
-    "conceptHierarchy.maxLevel": 4,
-    "conceptHierarchy.rootCount": 3,
-    "conceptHierarchy.leafCount": 111,
-    "conceptHierarchy.averageDepth": 2.696969696969697,
-    "conceptHierarchy.edgeCount": 129,
-    "knowledgeGraph.nodeCount": 47,
-    "knowledgeGraph.edgeCount": 140,
-    "knowledgeGraph.adjacencyCount": 47,
-    "knowledgeGraph.averageImportance": 0.17021276595744667
+    "frontmatterResults.__totalKeys": 149,
+    "mdastResults.__totalKeys": 149,
+    "linkData.__totalKeys": 149,
+    "entityData.__totalKeys": 149,
+    "keywordData.__totalKeys": 149,
+    "conceptHierarchy.totalConcepts": 25568,
+    "conceptHierarchy.maxLevel": 6,
+    "conceptHierarchy.rootCount": 149,
+    "conceptHierarchy.leafCount": 24378,
+    "conceptHierarchy.averageDepth": 3.421933667083855,
+    "conceptHierarchy.edgeCount": 25279,
+    "knowledgeGraph.nodeCount": 733,
+    "knowledgeGraph.edgeCount": 1897,
+    "knowledgeGraph.adjacencyCount": 733,
+    "knowledgeGraph.averageImportance": 0.25225102319235787
   },
   "validation": {
     "pass": "knowledge-graph-builder",
@@ -23,12 +28,12 @@
         "message": "OK"
       },
       {
-        "name": "nodes: 47",
+        "name": "nodes: 733",
         "passed": true,
         "message": "OK"
       },
       {
-        "name": "edges: 140",
+        "name": "edges: 1897",
         "passed": true,
         "message": "OK"
       },

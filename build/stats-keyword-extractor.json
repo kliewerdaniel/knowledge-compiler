@@ -1,7 +1,13 @@
 {
   "passId": "keyword-extractor",
   "phase": "ANALYSIS",
-  "stats": {},
+  "stats": {
+    "frontmatterResults.__totalKeys": 149,
+    "mdastResults.__totalKeys": 149,
+    "linkData.__totalKeys": 149,
+    "entityData.__totalKeys": 149,
+    "keywordData.__totalKeys": 149
+  },
   "validation": {
     "pass": "keyword-extractor",
     "valid": true,

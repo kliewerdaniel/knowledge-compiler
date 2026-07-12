@@ -1,10 +1,15 @@
 {
   "passId": "entity-extractor",
   "phase": "ANALYSIS",
-  "stats": {},
+  "stats": {
+    "frontmatterResults.__totalKeys": 149,
+    "mdastResults.__totalKeys": 149,
+    "linkData.__totalKeys": 149,
+    "entityData.__totalKeys": 149
+  },
   "validation": {
     "pass": "entity-extractor",
-    "valid": true,
+    "valid": false,
     "checks": [
       {
         "name": "entities extracted",
@@ -12,22 +17,167 @@
         "message": "OK"
       },
       {
-        "name": "entities found: 8",
+        "name": "entities found: 326",
         "passed": true,
         "message": "OK"
       },
       {
-        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/machine-learning.md",
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-10-04-detailed-description-of-insight-journal.md",
+        "passed": false,
+        "message": "26 duplicates found"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-10-09-how-to-build-a-persona-based-blog-post-generator-with-large-language-models.md",
+        "passed": false,
+        "message": "7 duplicates found"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-10-12-django-react.md",
+        "passed": false,
+        "message": "2 duplicates found"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-10-18-building-a-full-stack-application-with-django-and-react.md",
+        "passed": false,
+        "message": "12 duplicates found"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-10-22-integrating-django-react-ollama-with-xai-api.md",
+        "passed": false,
+        "message": "4 duplicates found"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-10-24-ghost-writer.md",
+        "passed": false,
+        "message": "7 duplicates found"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-10-30-creating-ai-agents.md",
         "passed": true,
         "message": "OK"
       },
       {
-        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/neural-networks.md",
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-04-deep-fake.md",
         "passed": true,
         "message": "OK"
       },
       {
-        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/transformers.md",
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-22-planning.md",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-22-rlhf-lab.md",
+        "passed": false,
+        "message": "16 duplicates found"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-23-rlhf-lab-business-plan.md",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-27-ai-agent-based-cross-platform-content-generator-and-distributor.md",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-27-data-annotation-guide.md",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-27-enhanced-persona-generator.md",
+        "passed": false,
+        "message": "1 duplicates found"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-27-instagram-feed-summarizer.md",
+        "passed": false,
+        "message": "11 duplicates found"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-27-reddit-blog-generator.md",
+        "passed": false,
+        "message": "4 duplicates found"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-27-swarm-autogen.md",
+        "passed": false,
+        "message": "3 duplicates found"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-28-basic-autogen.md",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-28-basic-swarm-chatbot.md",
+        "passed": false,
+        "message": "1 duplicates found"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-11-29-tech-company-orchestrator.md",
+        "passed": false,
+        "message": "2 duplicates found"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-01-basic-rag.md",
+        "passed": false,
+        "message": "8 duplicates found"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-02-persona-chat.md",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-05-personagen.md",
+        "passed": false,
+        "message": "1 duplicates found"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-09-pydantic-rag.md",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-10-rl.md",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-11-next-gen-personagen.md",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-14-learning-from-the-past.md",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-19-continue.dev-ollama.md",
+        "passed": false,
+        "message": "3 duplicates found"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-19-homeless-guide-austin.md",
+        "passed": false,
+        "message": "29 duplicates found"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/blog/2024-12-19-langchain-ollama.md",
+        "passed": false,
+        "message": "2 duplicates found"
+      },
+      {
+        "name": "no duplicate entities in __truncated",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "no duplicate entities in __totalKeys",
         "passed": true,
         "message": "OK"
       }

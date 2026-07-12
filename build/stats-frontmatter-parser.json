@@ -1,7 +1,9 @@
 {
   "passId": "frontmatter-parser",
   "phase": "PARSING",
-  "stats": {},
+  "stats": {
+    "frontmatterResults.__totalKeys": 149
+  },
   "validation": {
     "pass": "frontmatter-parser",
     "valid": true,
