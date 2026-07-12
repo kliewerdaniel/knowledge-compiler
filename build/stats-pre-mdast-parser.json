@@ -1,0 +1,11 @@
+{
+  "passId": "pre-mdast-parser",
+  "phase": "PARSING",
+  "stats": {},
+  "validation": {
+    "pass": "pre-mdast-parser",
+    "valid": true,
+    "checks": []
+  },
+  "result": null
+}

@@ -1,0 +1,120 @@
+{
+  "passId": "pre-frontmatter-parser",
+  "phase": "PARSING",
+  "input": {
+    "resolvedFiles": [
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/machine-learning.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/neural-networks.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/transformers.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      }
+    ],
+    "readFiles": [
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/machine-learning.md",
+        "checksum": "ddd62deb9bc21a5dc8ace2e0ca5938b3129608a02e87441148ba1a110d037ac1",
+        "mtime": 1783822258112.286,
+        "size": 1030,
+        "contentLength": 1030,
+        "contentPreview": "---\ntitle: Machine Learning Overview\ntags: [AI, ML, technology]\ndate: 2024-01-15\n---\n\n# Machine Learning Overview\n\nMachine learning is a subset of artificial intelligence that enables systems to learn"
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/neural-networks.md",
+        "checksum": "888e43dcf2e113e74535ee22133f9eb18bb5acf9910a279ee4e3d8e854ddadd0",
+        "mtime": 1783822260635.1758,
+        "size": 992,
+        "contentLength": 992,
+        "contentPreview": "---\ntitle: Neural Networks\ntags: [AI, deep-learning, neural-networks]\ndate: 2024-01-20\n---\n\n# Neural Networks\n\nNeural networks are computing systems inspired by biological neural networks in the human"
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/transformers.md",
+        "checksum": "ed3afbf9d14c03d48600f15ea0da5d8cbf0c84d99488df0b04637ce129533ded",
+        "mtime": 1783822263540.1182,
+        "size": 1111,
+        "contentLength": 1111,
+        "contentPreview": "---\ntitle: Transformer Architecture\ntags: [AI, deep-learning, transformers, NLP]\ndate: 2024-02-01\n---\n\n# Transformer Architecture\n\nThe Transformer is a neural network architecture introduced by Google"
+      }
+    ]
+  },
+  "output": {
+    "resolvedFiles": [
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/machine-learning.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/neural-networks.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/transformers.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      }
+    ],
+    "readFiles": [
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/machine-learning.md",
+        "checksum": "ddd62deb9bc21a5dc8ace2e0ca5938b3129608a02e87441148ba1a110d037ac1",
+        "mtime": 1783822258112.286,
+        "size": 1030,
+        "contentLength": 1030,
+        "contentPreview": "---\ntitle: Machine Learning Overview\ntags: [AI, ML, technology]\ndate: 2024-01-15\n---\n\n# Machine Learning Overview\n\nMachine learning is a subset of artificial intelligence that enables systems to learn"
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/neural-networks.md",
+        "checksum": "888e43dcf2e113e74535ee22133f9eb18bb5acf9910a279ee4e3d8e854ddadd0",
+        "mtime": 1783822260635.1758,
+        "size": 992,
+        "contentLength": 992,
+        "contentPreview": "---\ntitle: Neural Networks\ntags: [AI, deep-learning, neural-networks]\ndate: 2024-01-20\n---\n\n# Neural Networks\n\nNeural networks are computing systems inspired by biological neural networks in the human"
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/transformers.md",
+        "checksum": "ed3afbf9d14c03d48600f15ea0da5d8cbf0c84d99488df0b04637ce129533ded",
+        "mtime": 1783822263540.1182,
+        "size": 1111,
+        "contentLength": 1111,
+        "contentPreview": "---\ntitle: Transformer Architecture\ntags: [AI, deep-learning, transformers, NLP]\ndate: 2024-02-01\n---\n\n# Transformer Architecture\n\nThe Transformer is a neural network architecture introduced by Google"
+      }
+    ]
+  },
+  "result": null,
+  "stats": {},
+  "validation": {
+    "pass": "pre-frontmatter-parser",
+    "valid": true,
+    "checks": []
+  },
+  "timestamp": 1783823356645
+}

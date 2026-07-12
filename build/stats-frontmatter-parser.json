@@ -1,0 +1,21 @@
+{
+  "passId": "frontmatter-parser",
+  "phase": "PARSING",
+  "stats": {},
+  "validation": {
+    "pass": "frontmatter-parser",
+    "valid": true,
+    "checks": [
+      {
+        "name": "frontmatter parsed",
+        "passed": true,
+        "message": "OK"
+      }
+    ]
+  },
+  "result": {
+    "status": "success",
+    "errors": 0,
+    "warnings": 0
+  }
+}

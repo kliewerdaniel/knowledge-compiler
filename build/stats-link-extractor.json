@@ -1,0 +1,21 @@
+{
+  "passId": "link-extractor",
+  "phase": "ANALYSIS",
+  "stats": {},
+  "validation": {
+    "pass": "link-extractor",
+    "valid": true,
+    "checks": [
+      {
+        "name": "links extracted",
+        "passed": true,
+        "message": "OK"
+      }
+    ]
+  },
+  "result": {
+    "status": "success",
+    "errors": 0,
+    "warnings": 0
+  }
+}

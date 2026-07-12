@@ -1,0 +1,26 @@
+{
+  "passId": "glob-resolver",
+  "phase": "PARSING",
+  "stats": {},
+  "validation": {
+    "pass": "glob-resolver",
+    "valid": true,
+    "checks": [
+      {
+        "name": "files resolved",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "files is array",
+        "passed": true,
+        "message": "OK"
+      }
+    ]
+  },
+  "result": {
+    "status": "success",
+    "errors": 0,
+    "warnings": 0
+  }
+}

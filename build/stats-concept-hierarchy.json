@@ -1,0 +1,43 @@
+{
+  "passId": "concept-hierarchy",
+  "phase": "ANALYSIS",
+  "stats": {
+    "conceptHierarchy.totalConcepts": 132,
+    "conceptHierarchy.maxLevel": 4,
+    "conceptHierarchy.rootCount": 3,
+    "conceptHierarchy.leafCount": 111,
+    "conceptHierarchy.averageDepth": 2.696969696969697,
+    "conceptHierarchy.edgeCount": 129
+  },
+  "validation": {
+    "pass": "concept-hierarchy",
+    "valid": true,
+    "checks": [
+      {
+        "name": "concepts generated",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "concept count: 132",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "has edges",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "concepts have IDs",
+        "passed": true,
+        "message": "OK"
+      }
+    ]
+  },
+  "result": {
+    "status": "success",
+    "errors": 0,
+    "warnings": 0
+  }
+}

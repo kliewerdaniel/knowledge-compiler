@@ -46,9 +46,15 @@ export class KnowledgeGraphBuilderPass implements CompilerPass {
       if (conceptHierarchy) {
         for (const concept of conceptHierarchy.nodes.slice(0, 200)) {
           const conceptNodeId = getNodeOrCreate(concept.label, `Concept:${concept.entityType}`);
-          if (concept.level === 0) for (const child of concept.relatedConcepts) { const childId = getNodeOrCreate(child, "Concept"); edges.push({ id: `edge-${createId()}`, sourceId: conceptNodeId, targetId: childId, type: "is-a", weight: 0.8, metadata: {} }); }
           const conceptWeight = Math.min(concept.frequency / 20, 1.0);
-          for (const sectionId of concept.sectionIds.slice(0, 5)) { const secNodeId = getNodeOrCreate(sectionId, "Section"); edges.push({ id: `edge-${createId()}`, sourceId: secNodeId, targetId: conceptNodeId, type: "related-to", weight: conceptWeight, metadata: {} }); }
+          for (const sectionId of concept.sectionIds.slice(0, 5)) {
+            const secNodeId = getNodeOrCreate(sectionId, "Section");
+            edges.push({ id: `edge-${createId()}`, sourceId: secNodeId, targetId: conceptNodeId, type: "related-to", weight: conceptWeight, metadata: {} });
+            const secAdj = adjacency.get(secNodeId);
+            const conAdj = adjacency.get(conceptNodeId);
+            if (secAdj && !secAdj.includes(conceptNodeId)) secAdj.push(conceptNodeId);
+            if (conAdj && !conAdj.includes(secNodeId)) conAdj.push(secNodeId);
+          }
         }
       }
 

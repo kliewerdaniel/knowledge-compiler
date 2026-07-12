@@ -1,0 +1,21 @@
+{
+  "passId": "keyword-extractor",
+  "phase": "ANALYSIS",
+  "stats": {},
+  "validation": {
+    "pass": "keyword-extractor",
+    "valid": true,
+    "checks": [
+      {
+        "name": "keywords extracted",
+        "passed": true,
+        "message": "OK"
+      }
+    ]
+  },
+  "result": {
+    "status": "success",
+    "errors": 0,
+    "warnings": 0
+  }
+}

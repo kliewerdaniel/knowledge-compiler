@@ -1,0 +1,41 @@
+{
+  "passId": "entity-extractor",
+  "phase": "ANALYSIS",
+  "stats": {},
+  "validation": {
+    "pass": "entity-extractor",
+    "valid": true,
+    "checks": [
+      {
+        "name": "entities extracted",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "entities found: 8",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/machine-learning.md",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/neural-networks.md",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "no duplicate entities in /Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/transformers.md",
+        "passed": true,
+        "message": "OK"
+      }
+    ]
+  },
+  "result": {
+    "status": "success",
+    "errors": 0,
+    "warnings": 0
+  }
+}

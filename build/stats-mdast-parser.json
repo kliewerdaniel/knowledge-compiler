@@ -1,0 +1,21 @@
+{
+  "passId": "mdast-parser",
+  "phase": "PARSING",
+  "stats": {},
+  "validation": {
+    "pass": "mdast-parser",
+    "valid": true,
+    "checks": [
+      {
+        "name": "AST generated",
+        "passed": true,
+        "message": "OK"
+      }
+    ]
+  },
+  "result": {
+    "status": "success",
+    "errors": 0,
+    "warnings": 0
+  }
+}

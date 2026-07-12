@@ -1,0 +1,11 @@
+{
+  "passId": "pre-keyword-extractor",
+  "phase": "ANALYSIS",
+  "stats": {},
+  "validation": {
+    "pass": "pre-keyword-extractor",
+    "valid": true,
+    "checks": []
+  },
+  "result": null
+}

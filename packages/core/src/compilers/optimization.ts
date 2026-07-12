@@ -41,7 +41,19 @@ export class PruningPass implements CompilerPass {
         }
       }
       let nodesRemoved = 0;
-      for (const nodeId of kg.nodes.keys()) { const adj = kg.adjacency.get(nodeId) ?? []; if (adj.length === 0 && !kg.edges.has(nodeId)) { kg.nodes.delete(nodeId); kg.adjacency.delete(nodeId); kg.edges.delete(nodeId); nodesRemoved++; } }
+      const referencedNodes = new Set<string>();
+      for (const edge of kg.edges.values()) {
+        referencedNodes.add(edge.sourceId);
+        referencedNodes.add(edge.targetId);
+      }
+      for (const nodeId of kg.nodes.keys()) {
+        const adj = kg.adjacency.get(nodeId) ?? [];
+        if (adj.length === 0 && !referencedNodes.has(nodeId)) {
+          kg.nodes.delete(nodeId);
+          kg.adjacency.delete(nodeId);
+          nodesRemoved++;
+        }
+      }
       kg.totalEdges = kg.edges.size;
       pss(ctx, "knowledgeGraph", kg);
       return { status: "success", data: { edgesRemoved, nodesRemoved, remainingNodes: kg.nodes.size, remainingEdges: kg.edges.size }, errors: [], warnings: [], timing: { durationMs: Date.now() - startTime } };

@@ -1,0 +1,47 @@
+{
+  "passId": "knowledge-graph-builder",
+  "phase": "GRAPH_CONSTRUCTION",
+  "stats": {
+    "conceptHierarchy.totalConcepts": 132,
+    "conceptHierarchy.maxLevel": 4,
+    "conceptHierarchy.rootCount": 3,
+    "conceptHierarchy.leafCount": 111,
+    "conceptHierarchy.averageDepth": 2.696969696969697,
+    "conceptHierarchy.edgeCount": 129,
+    "knowledgeGraph.nodeCount": 47,
+    "knowledgeGraph.edgeCount": 140,
+    "knowledgeGraph.adjacencyCount": 47,
+    "knowledgeGraph.averageImportance": 0.17021276595744667
+  },
+  "validation": {
+    "pass": "knowledge-graph-builder",
+    "valid": true,
+    "checks": [
+      {
+        "name": "graph built",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "nodes: 47",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "edges: 140",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "no dangling refs",
+        "passed": true,
+        "message": "OK"
+      }
+    ]
+  },
+  "result": {
+    "status": "success",
+    "errors": 0,
+    "warnings": 0
+  }
+}

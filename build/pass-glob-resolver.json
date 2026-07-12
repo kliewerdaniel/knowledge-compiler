@@ -1,0 +1,95 @@
+{
+  "passId": "glob-resolver",
+  "phase": "PARSING",
+  "input": {
+    "resolvedFiles": [
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/machine-learning.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/neural-networks.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/transformers.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      }
+    ]
+  },
+  "output": {
+    "resolvedFiles": [
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/machine-learning.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/neural-networks.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/transformers.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      }
+    ]
+  },
+  "result": {
+    "status": "success",
+    "data": {
+      "files": [
+        "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/machine-learning.md",
+        "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/neural-networks.md",
+        "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/transformers.md"
+      ],
+      "baseDir": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus",
+      "patternCount": 1
+    },
+    "errors": [],
+    "warnings": [],
+    "timing": {
+      "durationMs": 16
+    }
+  },
+  "stats": {},
+  "validation": {
+    "pass": "glob-resolver",
+    "valid": true,
+    "checks": [
+      {
+        "name": "files resolved",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "files is array",
+        "passed": true,
+        "message": "OK"
+      }
+    ]
+  },
+  "timestamp": 1783823356643
+}

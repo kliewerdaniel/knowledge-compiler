@@ -177,61 +177,265 @@ export class KeywordExtractorPass implements CompilerPass {
   cacheKey(_ctx: any): string | null { return null; }
 }
 
+interface HeadingConcept {
+  id: string;
+  label: string;
+  depth: number;
+  filePath: string;
+  lineStart: number;
+  lineEnd: number;
+  parentId: string | null;
+}
+
 export class ConceptHierarchyPass implements CompilerPass {
-  descriptor: PassDescriptor = { id: "concept-hierarchy", name: "Concept Hierarchy Builder", version: 1, phase: "ANALYSIS", dependencies: ["entity-extractor", "keyword-extractor"], optionalDependencies: [], executionPolicy: { type: "singleton" }, config: { enabled: true, priority: 3, timeout: 30000, retryCount: 3, params: {}, onError: "fail" }, cachePolicy: { read: false, write: false, ttl: 0 } };
+  descriptor: PassDescriptor = { id: "concept-hierarchy", name: "Concept Hierarchy Builder", version: 2, phase: "ANALYSIS", dependencies: ["entity-extractor", "keyword-extractor"], optionalDependencies: ["mdast-parser"], executionPolicy: { type: "singleton" }, config: { enabled: true, priority: 3, timeout: 30000, retryCount: 3, params: {}, onError: "fail" }, cachePolicy: { read: false, write: false, ttl: 0 } };
+
   async initialize(_ctx: any): Promise<void> {}
+
   async execute(ctx: any): Promise<PassResult> {
     const startTime = Date.now();
     try {
+      const mdastResults = ps(ctx, "mdastResults") ?? {};
       const entityData = ps(ctx, "entityData") ?? {};
       const keywordData = ps(ctx, "keywordData") ?? {};
-      const conceptMap = new Map<string, any>();
+
+      const allConcepts: any[] = [];
+      const allEdges: Array<{ source: string; target: string; type: string; weight: number }> = [];
+      const adjacencyMap = new Map<string, string[]>();
       let conceptIdCounter = 0;
       const generateId = (): string => `concept-${++conceptIdCounter}`;
-      const typeGroups = new Map<string, Map<string, { count: number; docs: Set<string> }>>();
 
-      for (const [filePath, data] of (Object.entries(entityData) as any)) {
-        for (const entity of data.entities) {
-          const group = typeGroups.get(entity.type) ?? new Map();
-          const entry = group.get(entity.value) ?? { count: 0, docs: new Set<string>() };
-          entry.count += entity.count;
-          entry.docs.add(filePath);
-          group.set(entity.value, entry);
-          typeGroups.set(entity.type, group);
+      const docKeywords: Record<string, string[]> = {};
+      for (const [fp, kws] of Object.entries(keywordData) as any) {
+        docKeywords[fp] = (kws as any[]).slice(0, 10).map((k: any) => k.keyword);
+      }
+
+      for (const [filePath, doc] of Object.entries(mdastResults) as any) {
+        const ast = doc.ast;
+        const fm = doc.frontmatter ?? {};
+        const docTitle: string = fm.title
+          || (ast?.children?.[0]?.children?.[0]?.value)
+          || filePath.split("/").pop()?.replace(/\.md$/, "")
+          || "Untitled";
+
+        const rawContent: string = ast?.rawContent ?? "";
+        const lines = rawContent.split("\n");
+
+        // Extract headings from MDAST with their positions
+        const headings: Array<{ label: string; depth: number; line: number }> = [];
+        const walkHeadings = (node: any): void => {
+          if (!node) return;
+          if (node.type === "heading") {
+            const label = node.children?.map((c: any) => c.value ?? "").join("").trim() || "";
+            if (label) {
+              headings.push({ label, depth: node.depth, line: node.position?.start?.line ?? 0 });
+            }
+          }
+          if (node.children && Array.isArray(node.children)) {
+            node.children.forEach((c: any) => walkHeadings(c));
+          }
+        };
+        walkHeadings(ast);
+
+        // Build tree from headings using stack
+        const headingConcepts: HeadingConcept[] = [];
+        const stack: Array<{ depth: number; id: string }> = [];
+
+        const rootId = generateId();
+        headingConcepts.push({
+          id: rootId,
+          label: docTitle,
+          depth: 0,
+          filePath,
+          lineStart: headings.length > 0 ? headings[0].line : 1,
+          lineEnd: lines.length,
+          parentId: null,
+        });
+        stack.push({ depth: 0, id: rootId });
+
+        for (const h of headings) {
+          const id = generateId();
+          while (stack.length > 0 && stack[stack.length - 1].depth >= h.depth) {
+            stack.pop();
+          }
+          const parentId = stack.length > 0 ? stack[stack.length - 1].id : rootId;
+          headingConcepts.push({
+            id,
+            label: h.label,
+            depth: h.depth,
+            filePath,
+            lineStart: h.line,
+            lineEnd: lines.length,
+            parentId,
+          });
+          stack.push({ depth: h.depth, id });
+        }
+
+        // Assign lineEnd for each heading
+        for (let i = 0; i < headingConcepts.length; i++) {
+          const hc = headingConcepts[i];
+          if (hc.depth === 0) continue;
+          let nextLine = lines.length;
+          for (let j = i + 1; j < headingConcepts.length; j++) {
+            if (headingConcepts[j].depth <= hc.depth) {
+              nextLine = headingConcepts[j].lineStart;
+              break;
+            }
+          }
+          hc.lineEnd = nextLine;
+        }
+
+        // Build entity refs with line numbers
+        const docEntities: Array<{ type: string; value: string; line: number }> = [];
+        const ed = entityData[filePath];
+        if (ed) {
+          for (const entity of ed.entities) {
+            for (const pos of entity.positions) {
+              const line = rawContent.slice(0, pos).split("\n").length;
+              docEntities.push({ type: entity.type, value: entity.value, line });
+            }
+          }
+        }
+        const kw = docKeywords[filePath] ?? [];
+
+        // Create concept nodes and edges for each heading
+        for (const hc of headingConcepts) {
+          const sectionEntities = docEntities.filter(
+            (e) => e.line >= hc.lineStart && e.line <= hc.lineEnd
+          );
+          const entityCount = sectionEntities.length;
+          const uniqueEntityTypes = new Set(sectionEntities.map((e) => e.type)).size;
+
+          const concept = {
+            id: hc.id,
+            label: hc.label,
+            entityType: "heading",
+            frequency: Math.max(1, entityCount),
+            documentCount: 1,
+            relatedConcepts: [],
+            level: hc.depth,
+            description: `Section: ${hc.label} (from ${filePath})`,
+            sectionIds: [filePath],
+            entityIds: sectionEntities.map((e) => `${e.type}:${e.value}`),
+            sourceFile: filePath,
+            sourceLine: hc.lineStart,
+            entityCount,
+            uniqueEntityTypes,
+          };
+          allConcepts.push(concept);
+
+          if (hc.parentId) {
+            allEdges.push({ source: hc.parentId, target: hc.id, type: "is-a", weight: 0.8 });
+            const srcAdj = adjacencyMap.get(hc.parentId) ?? [];
+            srcAdj.push(hc.id);
+            adjacencyMap.set(hc.parentId, srcAdj);
+            const tgtAdj = adjacencyMap.get(hc.id) ?? [];
+            tgtAdj.push(hc.parentId);
+            adjacencyMap.set(hc.id, tgtAdj);
+          }
+
+          for (const keyword of kw.slice(0, 5)) {
+            const kwConceptId = generateId();
+            allConcepts.push({
+              id: kwConceptId,
+              label: keyword,
+              entityType: "keyword",
+              frequency: 1,
+              documentCount: 1,
+              relatedConcepts: [],
+              level: hc.depth + 1,
+              description: `Keyword under ${hc.label}`,
+              sectionIds: [filePath],
+              entityIds: [],
+              sourceFile: filePath,
+              sourceLine: hc.lineStart,
+              entityCount: 0,
+              uniqueEntityTypes: 0,
+            });
+            allEdges.push({ source: hc.id, target: kwConceptId, type: "contains", weight: 0.5 });
+            const srcAdj = adjacencyMap.get(hc.id) ?? [];
+            srcAdj.push(kwConceptId);
+            adjacencyMap.set(hc.id, srcAdj);
+            const tgtAdj = adjacencyMap.get(kwConceptId) ?? [];
+            tgtAdj.push(hc.id);
+            adjacencyMap.set(kwConceptId, tgtAdj);
+          }
         }
       }
 
-      for (const [type, values] of typeGroups) {
-        const entries = Array.from(values.entries()).map(([label, data]) => ({ label, count: data.count, docCount: data.docs.size })).sort((a, b) => b.count - a.count);
-        for (const { label, count, docCount } of entries) {
+      // Cross-document entity concepts
+      const crossDocEntities = new Map<string, { type: string; count: number; docs: Set<string> }>();
+      for (const [fp, ed] of Object.entries(entityData) as any) {
+        for (const entity of ed.entities) {
+          const key = `${entity.type}:${entity.value}`;
+          const existing = crossDocEntities.get(key) ?? { type: entity.type, count: 0, docs: new Set<string>() };
+          existing.count += entity.count;
+          existing.docs.add(fp);
+          crossDocEntities.set(key, existing);
+        }
+      }
+      for (const [key, data] of crossDocEntities) {
+        if (data.docs.size < 2) continue;
+        const [type, ...labelParts] = key.split(":");
+        const label = labelParts.join(":");
+        const existing = allConcepts.find(
+          (c) => c.label === label && c.entityType === `entity:${type}`
+        );
+        if (!existing) {
           const conceptId = generateId();
-          const level = count >= 5 ? 0 : count >= 2 ? 1 : 2;
-          conceptMap.set(conceptId, { label, entityType: type, frequency: count, documentCount: docCount, relatedConcepts: [], level, description: `Entity of type ${type}: ${label}`, sectionIds: Array.from((typeGroups.get(type)?.get(label)?.docs ?? new Set())), entityIds: [conceptId] });
+          allConcepts.push({
+            id: conceptId,
+            label,
+            entityType: `entity:${type}`,
+            frequency: data.count,
+            documentCount: data.docs.size,
+            relatedConcepts: [],
+            level: 1,
+            description: `Cross-document entity: ${label}`,
+            sectionIds: Array.from(data.docs),
+            entityIds: [key],
+            sourceFile: Array.from(data.docs)[0],
+            sourceLine: 0,
+            entityCount: data.count,
+            uniqueEntityTypes: 1,
+          });
         }
       }
 
-      for (const [filePath, kws] of (Object.entries(keywordData) as any)) {
-        for (const kw of kws.slice(0, 10)) {
-          const conceptId = generateId();
-          conceptMap.set(conceptId, { label: kw.keyword, entityType: "keyword", frequency: Math.round(kw.score * 100), documentCount: 1, relatedConcepts: [], level: 2, description: `Keyword from ${filePath}`, sectionIds: [filePath], entityIds: [conceptId] });
-        }
-      }
+      const totalConcepts = allConcepts.length;
+      const rootConcepts = allConcepts.filter((c: any) => c.level === 0).map((c: any) => c.id);
+      const maxLevel = Math.max(...allConcepts.map((c: any) => c.level), 0);
+      const averageDepth = totalConcepts > 0
+        ? allConcepts.reduce((s: number, c: any) => s + c.level, 0) / totalConcepts
+        : 0;
 
-      const conceptsArray = Array.from(conceptMap.values());
-      const rootConcepts = conceptsArray.filter((c: any) => c.level === 0).map((c: any) => c.label);
-      const leafConcepts = conceptsArray.filter((c: any) => c.level === 2);
+      const graph = {
+        nodes: allConcepts,
+        edges: allEdges,
+        adjacency: adjacencyMap,
+        maxLevel,
+        totalConcepts,
+        rootConceptIds: rootConcepts,
+        leafCount: allConcepts.filter((c: any) => c.level >= 2).length,
+        averageDepth,
+        maxChildren: 0,
+      };
 
-      const graph = { nodes: conceptsArray, edges: [], adjacency: new Map<string, string[]>(), maxLevel: Math.max(...conceptsArray.map((c: any) => c.level), 0), totalConcepts: conceptsArray.length, rootConceptIds: rootConcepts, leafCount: leafConcepts.length, averageDepth: conceptsArray.reduce((s: number, c: any) => s + c.level, 0) / Math.max(conceptsArray.length, 1), maxChildren: 0 };
       pss(ctx, "conceptHierarchy", graph);
-      for (const [filePath] of (Object.entries(entityData) as any)) {
-        ctx.getIRStore().setConceptGraph(filePath, graph);
-      }
-      return { status: "success", data: { conceptCount: conceptsArray.length, typeGroups: typeGroups.size }, errors: [], warnings: [], timing: { durationMs: Date.now() - startTime } };
+
+      return {
+        status: "success",
+        data: { conceptCount: totalConcepts, edgeCount: allEdges.length },
+        errors: [],
+        warnings: [],
+        timing: { durationMs: Date.now() - startTime },
+      };
     } catch (err) {
       const error = err instanceof Error ? err : new Error(String(err));
       return { status: "failed", errors: [`Concept hierarchy failed: ${error.message}`], warnings: [], timing: { durationMs: Date.now() - startTime } };
     }
   }
+
   async finalize(_ctx: any): Promise<void> {}
   async validate(_ctx: any): Promise<PassResult> { return { status: "success", errors: [], warnings: [] }; }
   cacheKey(_ctx: any): string | null { return null; }

@@ -9,7 +9,8 @@ import { Scheduler } from "./scheduler.js";
 import type { IRStore } from "./types.js";
 import { ArtifactWriter } from "@knowledge-compiler/artifacts";
 import { mkdir, rm } from "node:fs/promises";
-import { join } from "node:path";
+import { join, resolve } from "node:path";
+import { CompilerDebugger } from "./debug.js";
 
 // Built-in passes
 import {
@@ -90,11 +91,18 @@ export class Compiler {
   private pipeline: PipelineOrchestrator | null = null;
   private scheduler = new Scheduler(4);
   private outputDir: string;
+  private debugInstance: CompilerDebugger | null = null;
 
   constructor(options: CompileOptions = {}) {
     this.config = options.config || (CompilerConfigSchema.parse({}) as CompilerConfig);
     this.outputDir = options.output || this.config.output.dir;
     this.compilerContext = new DefaultCompilerContext(this.config);
+
+    // Set up debug mode
+    const debugDir = options.debug ? resolve(options.debug) : "";
+    if (debugDir) {
+      this.debugInstance = new CompilerDebugger(debugDir);
+    }
 
     // Register built-in passes
     for (const pass of BUILTIN_PASSES) {
@@ -122,7 +130,7 @@ export class Compiler {
 
     try {
       // Initialize pipeline
-      this.pipeline = new PipelineOrchestrator(this.compilerContext, this.passRegistry);
+      this.pipeline = new PipelineOrchestrator(this.compilerContext, this.passRegistry, this.debugInstance ?? undefined);
 
       // Execute pipeline
       await this.pipeline.execute({
@@ -142,7 +150,7 @@ export class Compiler {
         artifactsWritten: this.compilerContext.getIRStore().getEmbeddingCount(),
         documentsProcessed: this.compilerContext.getIRStore().getDocumentCount(),
         sectionsProcessed: this.compilerContext.getIRStore().getSectionCount(),
-        conceptsProcessed: 0,
+        conceptsProcessed: this.compilerContext.getIRStore().getStats().conceptCount,
         durationMs,
         phaseTiming: Object.fromEntries(this.compilerContext.phaseStartTime) as any,
         manifestPath: join(this.outputDir, "manifest.json"),
@@ -186,5 +194,9 @@ export class Compiler {
 
   getPassRegistry(): PluginRegistry {
     return this.passRegistry;
+  }
+
+  getDebugInstance(): CompilerDebugger | null {
+    return this.debugInstance;
   }
 }

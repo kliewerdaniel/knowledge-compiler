@@ -1,0 +1,14 @@
+{
+  "passId": "pre-glob-resolver",
+  "phase": "PARSING",
+  "input": {},
+  "output": {},
+  "result": null,
+  "stats": {},
+  "validation": {
+    "pass": "pre-glob-resolver",
+    "valid": true,
+    "checks": []
+  },
+  "timestamp": 1783823356627
+}

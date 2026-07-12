@@ -1,0 +1,11 @@
+{
+  "passId": "pre-concept-hierarchy",
+  "phase": "ANALYSIS",
+  "stats": {},
+  "validation": {
+    "pass": "pre-concept-hierarchy",
+    "valid": true,
+    "checks": []
+  },
+  "result": null
+}

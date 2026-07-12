@@ -35,6 +35,7 @@ export interface CompileOptions {
   output?: string;
   passes?: PassID[];
   skipPasses?: PassID[];
+  debug?: string;
 }
 
 export interface IRStore {
@@ -98,6 +99,7 @@ export interface CompilerContext {
 
   getPassState<T>(passId: PassID): T | undefined;
   setPassState<T>(passId: PassID, state: T): void;
+  getPassStateMap(): Map<string, unknown>;
 
   addError(error: CompilerError): void;
   addWarning(message: string): void;
@@ -129,6 +131,10 @@ export class DefaultCompilerContext implements CompilerContext {
 
   setPassState<T>(passId: PassID, state: T): void {
     this.passState.set(passId, state);
+  }
+
+  getPassStateMap(): Map<string, unknown> {
+    return this.passState;
   }
 
   addError(error: CompilerError): void {
@@ -171,6 +177,10 @@ export class CompilerContextWithStore implements CompilerContext {
 
   setPassState<T>(passId: PassID, state: T): void {
     this.passState.set(passId, state);
+  }
+
+  getPassStateMap(): Map<string, unknown> {
+    return this.passState;
   }
 
   addError(error: CompilerError): void {

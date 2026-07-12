@@ -23,6 +23,15 @@ function splitTextIntoChunks(text: string, chunkSize: number, overlap: number): 
   return chunks;
 }
 function estimateTokens(text: string): number { return Math.ceil(text.split(/\s+/).filter(Boolean).length * 1.3); }
+function charToLineCol(text: string, offset: number): { line: number; col: number } {
+  const lines = text.slice(0, Math.min(offset, text.length)).split("\n");
+  return { line: lines.length, col: lines[lines.length - 1]!.length + 1 };
+}
+function computePosition(text: string, start: number, end: number): { startLine: number; endLine: number; startCol: number; endCol: number } {
+  const s = charToLineCol(text, start);
+  const e = charToLineCol(text, end);
+  return { startLine: s.line, endLine: e.line, startCol: s.col, endCol: e.col };
+}
 function normalize(vector: Float32Array): void {
   let m = 0; for (let i = 0; i < vector.length; i++) m += vector[i] * vector[i]; m = Math.sqrt(m);
   if (m > 0) for (let i = 0; i < vector.length; i++) vector[i] /= m;
@@ -42,7 +51,7 @@ export class TextChunkerPass implements CompilerPass {
         const content = doc.ast?.rawContent ?? doc.frontmatter?.content ?? extractPlainText(doc.ast);
         const text = typeof content === "string" ? content : extractPlainText(doc.ast);
         const docChunks = splitTextIntoChunks(text, chunkConfig.chunkSize, chunkConfig.chunkOverlap);
-        chunks[filePath] = docChunks.map((chunk, i) => ({ sectionId: `${filePath}-chunk-${i}`, content: chunk.content, startChar: chunk.start, endChar: chunk.end, tokenCount: estimateTokens(chunk.content), order: i }));
+        chunks[filePath] = docChunks.map((chunk, i) => ({ sectionId: `${filePath}-chunk-${i}`, content: chunk.content, startChar: chunk.start, endChar: chunk.end, position: computePosition(text, chunk.start, chunk.end), tokenCount: estimateTokens(chunk.content), order: i }));
         const sectionGraph = { docId: filePath, sections: chunks[filePath], totalSections: chunks[filePath].length, maxDepth: 1, metadata: {}, createdAt: Date.now() };
         ctx.getIRStore().setSectionGraph(filePath, sectionGraph);
       }

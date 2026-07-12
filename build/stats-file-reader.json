@@ -1,0 +1,26 @@
+{
+  "passId": "file-reader",
+  "phase": "PARSING",
+  "stats": {},
+  "validation": {
+    "pass": "file-reader",
+    "valid": true,
+    "checks": [
+      {
+        "name": "files read",
+        "passed": true,
+        "message": "OK"
+      },
+      {
+        "name": "files have content",
+        "passed": true,
+        "message": "OK"
+      }
+    ]
+  },
+  "result": {
+    "status": "success",
+    "errors": 0,
+    "warnings": 0
+  }
+}

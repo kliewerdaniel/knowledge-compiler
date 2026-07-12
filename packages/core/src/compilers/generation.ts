@@ -53,10 +53,16 @@ export class ArtifactSerializerPass implements CompilerPass {
         const docs = Array.from(kg.nodes.values()).map((node: any) => {
           const meta = node.metadata || {};
           const pr = pagerankScores.get(node.id) ?? 0;
+          const label = meta.label || "";
+          const shortLabel = (meta.type === "Document" && frontmatterResults[label]?.frontmatter?.title)
+            ? frontmatterResults[label].frontmatter.title
+            : (meta.type === "Document" && label.includes("/"))
+              ? label.split("/").pop()?.replace(/\.md$/, "") || label
+              : label;
           return {
             id: node.id,
-            title: meta.label || node.id,
-            name: meta.label || node.id,
+            title: shortLabel,
+            name: shortLabel,
             type: meta.type || "unknown",
             importance: meta.importance ?? pr,
             clusterId: null,
@@ -96,6 +102,7 @@ export class ArtifactSerializerPass implements CompilerPass {
             summary: chunk.content?.slice(0, 200) ?? "",
             startOffset: chunk.startChar ?? 0,
             endOffset: chunk.endChar ?? 0,
+            position: chunk.position ?? null,
             level: 0,
             tags,
             date,
@@ -125,6 +132,8 @@ export class ArtifactSerializerPass implements CompilerPass {
           aliases: [],
           clusterId: null,
           docId: node.sectionIds?.[0] ?? null,
+          sourceFile: node.sourceFile ?? null,
+          position: node.sourceLine != null ? { startLine: node.sourceLine, endLine: node.sourceLine + 1, startCol: 1, endCol: 1 } : null,
         }));
         const conceptIndexData = { concepts };
         const conceptIndexPath = join(outputDir, "concept-index.json");

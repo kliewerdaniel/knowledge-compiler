@@ -1,0 +1,11 @@
+{
+  "passId": "pre-link-extractor",
+  "phase": "ANALYSIS",
+  "stats": {},
+  "validation": {
+    "pass": "pre-link-extractor",
+    "valid": true,
+    "checks": []
+  },
+  "result": null
+}

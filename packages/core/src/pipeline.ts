@@ -12,6 +12,7 @@ import type {
   PassDescriptor,
 } from "@knowledge-compiler/plugins";
 import { PluginRegistry } from "@knowledge-compiler/plugins";
+import { CompilerDebugger } from "./debug.js";
 import pino from "pino";
 
 const logger = pino({ name: "pipeline", level: "info" });
@@ -32,6 +33,7 @@ export class PipelineOrchestrator {
   constructor(
     private ctx: CompilerContext,
     private passRegistry: PluginRegistry,
+    private debugInstance?: CompilerDebugger,
   ) {}
 
   async execute(options?: { passes?: PassID[]; skipPasses?: PassID[] }): Promise<CompilerResult> {
@@ -104,11 +106,34 @@ export class PipelineOrchestrator {
         continue;
       }
 
+      const passId = pass.descriptor.id;
+
       try {
         const passCtx = this.createPassContext();
+
+        if (this.debugInstance) {
+          this.debugInstance.snapshot(
+            `pre-${passId}`,
+            phase,
+            new Map(this.ctx.getPassStateMap()),
+            new Map(this.ctx.getPassStateMap()),
+            null,
+          );
+        }
+
         await pass.initialize(passCtx);
         const result = await pass.execute(passCtx);
         await pass.finalize(passCtx);
+
+        if (this.debugInstance) {
+          this.debugInstance.snapshot(
+            passId,
+            phase,
+            new Map(this.ctx.getPassStateMap()),
+            new Map(this.ctx.getPassStateMap()),
+            result,
+          );
+        }
 
         if (result.status === "success" || result.status === "partial") {
           for (const warning of result.warnings ?? []) {
@@ -121,7 +146,7 @@ export class PipelineOrchestrator {
             this.ctx.addError({
               id: generateErrorId(),
               severity: "transient",
-              passId: pass.descriptor.id,
+              passId,
               phase,
               message: error,
               recoverable: true,
@@ -135,7 +160,7 @@ export class PipelineOrchestrator {
         this.ctx.addError({
           id: generateErrorId(),
           severity: "transient",
-          passId: pass.descriptor.id,
+          passId,
           phase,
           message: error.message,
           recoverable: true,

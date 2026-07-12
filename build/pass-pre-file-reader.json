@@ -1,0 +1,68 @@
+{
+  "passId": "pre-file-reader",
+  "phase": "PARSING",
+  "input": {
+    "resolvedFiles": [
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/machine-learning.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/neural-networks.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/transformers.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      }
+    ]
+  },
+  "output": {
+    "resolvedFiles": [
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/machine-learning.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/neural-networks.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      },
+      {
+        "filePath": "/Users/danielkliewer/Documents/Projects/knowledge-compiler/test-corpus/transformers.md",
+        "checksum": "",
+        "mtime": 0,
+        "size": 0,
+        "contentLength": 0,
+        "contentPreview": ""
+      }
+    ]
+  },
+  "result": null,
+  "stats": {},
+  "validation": {
+    "pass": "pre-file-reader",
+    "valid": true,
+    "checks": []
+  },
+  "timestamp": 1783823356644
+}
