@@ -239,16 +239,17 @@ export function GraphView({
 
     // Zoom
     if (enableZoom) {
-      svg
-        .call(
-          d3
-            .zoom<SVGSVGElement, unknown>()
-            .scaleExtent([0.1, 5])
-            .on("zoom", (_event) => {
-              g.attr("transform", _event.transform);
-            })
-        )
-        .call(() => {});
+      const zoom = d3
+        .zoom<SVGSVGElement, unknown>()
+        .scaleExtent([0.1, 5])
+        .on("zoom", (_event) => {
+          g.attr("transform", _event.transform);
+        });
+      
+      svg.call(zoom);
+      
+      // Set initial transform to identity (no zoom/pan)
+      g.attr("transform", "");
     }
 
     // Simulation
